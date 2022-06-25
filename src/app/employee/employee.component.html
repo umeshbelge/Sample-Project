@@ -1,0 +1,16 @@
+<table datatable [dtOptions]="dtOptions" class=" datatable  row-border hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts">
+      <td>{{ post.id }}</td>
+      <td>{{ post.name }}</td>
+      <td>{{ post.email }}</td>
+    </tr>
+  </tbody>
+</table>
